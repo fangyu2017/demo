@@ -1,0 +1,149 @@
+﻿@charset "utf-8";
+
+/*reset css*/
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    background-image: url("../images/bj-game.jpg");
+}
+
+.game {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.game a {
+    position: absolute;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    top: 1rem;
+    z-index: 1;
+}
+
+.game a.gold1 {
+    background-image: url("../images/gold1.png");
+    width: 1.16rem;
+    height: 1.36rem;
+}
+
+.game a.gold2 {
+    background-image: url("../images/gold2.png");
+    width: .77rem;
+    height: .88rem;
+}
+
+.game a.gold3 {
+    background-image: url("../images/gold2.png");
+    width: .92rem;
+    height: .95rem;
+}
+
+.game a.gold4 {
+    background-image: url("../images/gold2.png");
+    width: 1.39rem;
+    height: 1.27rem;
+}
+
+.header{
+    width: 6.4rem;
+    margin: 0 auto;
+}
+/*.god {
+   
+    width: 3rem;
+    height: 2.03rem;
+    background-size: 100% auto;
+    position: absolute;
+    top: .3rem;
+    left: 0;
+    z-index: 2;
+}*/
+.god {
+    /*background: url("../images/god.png")
+    no-repeat;*/
+    width: 3rem;
+    height: 2.03rem;
+    background-size: 100% auto;
+    position: absolute;
+    top: .3rem;
+    right: 0;
+    z-index: 2;
+}
+
+.timeBox {
+    position: absolute;
+    width: 2.6rem;
+    height: 1.24rem;
+    right: .3rem;
+    top: .53rem;
+    z-index: 5;
+}
+
+.timeBox aside {
+    background: url("../images/bj-score.png") no-repeat;
+    width: .98rem;
+    height: 1.24rem;
+    background-size: 100% auto;
+    position: relative;
+    float: left;
+    margin-left: .06rem;
+    line-height: 1.24rem;
+    text-align: center;
+    font-size: 1.2rem;
+    content: #FFF;
+    font-weight: bold;
+}
+
+.timeBox em {
+    display: block;
+    font-size: .32rem;
+    color: #FFF;
+    float: left;
+    margin: .8rem 0 0 .05rem;
+    line-height: .4rem;
+}
+
+.timeBox aside:before {
+    content: "";
+    position: absolute;
+    display: block;
+    background: url("../images/bj-score2.png") no-repeat;
+    background-size: 100% auto;
+    width: .89rem;
+    height: .09rem;
+    top: .53rem;
+    left: .04rem;
+    z-index: 2;
+}
+
+.scoreBox {
+    background: url("../images/bj-mark.png") no-repeat;
+    width: 5.8rem;
+    height: 1.9rem;
+    background-size: 100% auto;
+    position: absolute;
+    z-index: 9;
+    left: 50%;
+    bottom: .2rem;
+    margin-left: -2.9rem;
+}
+
+.scoreBox h3 {
+    width: 4.2rem;
+    height: 1rem;
+    margin: .05rem auto 0;
+    text-align: center;
+    line-height: 1rem;
+    content: #FFF;
+    font-size: .6rem;
+}

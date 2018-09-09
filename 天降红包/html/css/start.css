@@ -1,0 +1,44 @@
+﻿@charset "utf-8";
+
+/*reset css*/
+
+.header {
+    width: 5rem;
+    height: 2.2rem;
+    background: url("../images/title1.png") no-repeat;
+    background-size: 100% auto;
+    margin: 1.2rem auto 0;
+}
+
+.startText {
+    background: url("../images/title3.png") no-repeat;
+    width: 4rem;
+    height: 1.5rem;
+    background-size: 100% auto;
+    margin: 1.7rem auto 0;
+}
+
+.inputs {
+    width: 4rem;
+    height: .6rem;
+    background: #FFF;
+    border: .04rem #6B00F6 solid;
+    margin: .5rem auto;
+    padding: 0 .2rem;
+}
+
+.inputs input {
+    border: none;
+    width: 100%;
+    height: .54rem;
+    font-size: .3rem;
+}
+
+.start {
+    display: block;
+    background: url("../images/but-1.png") no-repeat;
+    width: 2.51rem;
+    height: .78rem;
+    background-size: 100% auto;
+    margin: .3rem auto;
+}

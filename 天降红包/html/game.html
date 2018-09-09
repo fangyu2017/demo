@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1, maximum-scale=1,user-scalable=no" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="blank" />
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link href="css/base.css" rel="stylesheet" type="text/css">
+    <link href="css/game.css" rel="stylesheet" type="text/css">
+    <script src="js/fontSize.js"></script>
+    <script src="js/jquery.2.1.4.min.js"></script>
+    <script src="js/function.js"></script>
+    <title>天降红包雨</title>
+</head>
+<div class="game">
+    <div class="god"></div>
+    <div class="timeBox">
+        <aside class="ten">10000</aside>
+        <aside class="one">0</aside>
+        <em>秒</em>
+    </div>
+    <div class="scoreBox">
+        <h3>话费: <em class="price">0.00</em> 元</h3>
+    </div>
+</div>
+<script src="js/game.js"></script>
+<script>
+    $(function () {
+        var telFare = new TelFare({
+            call: function (score) {
+                //                alert("共得到"+score+"元话费")
+                if (parseInt(score) >= 1) {
+                    // window.location.href="success.html"
+                } else {
+                    //window.location.href="fail.html"
+                }
+
+            }
+        });
+    });
+</script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+﻿@charset "utf-8";
+
+/*reset css*/
+
+.header {
+    width: 5rem;
+    height: 2.2rem;
+    background: url("../images/title1.png") no-repeat;
+    background-size: 100% auto;
+    margin: 1.2rem auto 0;
+}
+
+.wallet {
+    background: url("../images/wallet.png") no-repeat;
+    background-size: 100% auto;
+    margin: .5rem auto 0;
+    width: 5.5rem;
+    padding-top: 3.5rem;
+}
+
+.wallet h6 {
+    height: .8rem;
+    text-align: center;
+    margin-top: .4rem;
+}
+
+.wallet h6 a {
+    display: inline-block;
+    width: 2.51rem;
+    height: .78rem;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    margin: 0 .1rem;
+}
+
+.wallet h6 a.but-start {
+    background-image: url("../images/but-1.png");
+}
+
+.wallet h6 a.but-rule {
+    background-image: url("../images/but-2.png");
+}
+
+.wallet h6 a.but-prize {
+    background-image: url("../images/but-3.png");
+}

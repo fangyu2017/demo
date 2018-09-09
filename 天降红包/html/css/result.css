@@ -1,0 +1,113 @@
+﻿@charset "utf-8";
+
+/*reset css*/
+
+.header {
+    width: 5rem;
+    height: 2.2rem;
+    background: url("../images/title1.png") no-repeat;
+    background-size: 100% auto;
+    margin: 1.2rem auto 0;
+}
+
+.wallet {
+    background: url("../images/wallet.png") no-repeat;
+    background-size: 100% auto;
+    margin: .5rem auto 0;
+    width: 5.5rem;
+    padding-top: 3.5rem;
+}
+
+.wallet h6 {
+    height: .8rem;
+    text-align: center;
+    margin-top: .4rem;
+}
+
+.wallet h6 a {
+    display: inline-block;
+    width: 2.51rem;
+    height: .78rem;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    margin: 0 .1rem;
+}
+
+.wallet h6 a.but-start {
+    background-image: url("../images/but-1.png");
+}
+
+.wallet h6 a.but-rule {
+    background-image: url("../images/but-2.png");
+}
+
+.wallet h6 a.but-prize {
+    background-image: url("../images/but-3.png");
+}
+
+.result-success {
+    background: url("../images/result-text1.png") no-repeat center top;
+    padding-top: 1.2rem;
+    margin: 1.5rem auto 0;
+    background-size: 4rem auto;
+}
+
+.result-success .text {
+    background: url("../images/result-text2.png") no-repeat;
+    width: 6.4rem;
+    height: 1.58rem;
+    background-size: 100% auto;
+}
+
+.reStart {
+    display: block;
+    background: url("../images/but-5.png") no-repeat;
+    width: 2.51rem;
+    height: .78rem;
+    background-size: 100% auto;
+    margin: .3rem auto;
+}
+
+.toHome {
+    display: block;
+    background: url("../images/but-6.png") no-repeat;
+    width: 2.51rem;
+    height: .78rem;
+    background-size: 100% auto;
+    margin: .3rem auto;
+}
+
+.result-fail {
+    background: url("../images/result-text3.png") no-repeat center top;
+    padding-top: 1.2rem;
+    margin: 1.5rem auto 0;
+    background-size: 4rem auto;
+}
+
+.result-fail .text {
+    background-repeat: no-repeat;
+    width: 6.4rem;
+    height: 1.5rem;
+    background-size: 100% auto;
+    margin-top: .2rem;
+}
+
+.result-fail .text.t0 {
+    background-image: url("../images/result-text4.png");
+}
+
+.result-fail .text.t1 {
+    background-image: url("../images/result-text5.png");
+}
+
+.result-fail .text.t2 {
+    background-image: url("../images/result-text6.png");
+}
+
+.result-fail .text.t3 {
+    background-image: url("../images/result-text7.png");
+}
+
+.result-fail .text.t4 {
+    background-image: url("../images/result-text8.png");
+}

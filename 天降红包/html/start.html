@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1, maximum-scale=1,user-scalable=no" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="blank" />
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link href="css/base.css" rel="stylesheet" type="text/css">
+    <link href="css/start.css" rel="stylesheet" type="text/css">
+    <script src="js/fontSize.js"></script>
+    <script src="js/jquery.2.1.4.min.js"></script>
+    <script src="js/function.js"></script>
+    <title>天降红包雨</title>
+</head>
+<div class="wrapper">
+    <div class="header"></div>
+    <div class="startText"></div>
+    <div class="inputs">
+        <input type="tel" name="phone" placeholder="输入您的手机号">
+    </div>
+    <a href="javascript:void(0)" class="start"></a>
+</div>
+<!--弹出分享app-->
+<div class="sharePop app">
+    <div class="person"></div>
+    <div class="text1"></div>
+    <div class="code"></div>
+    <div class="text2"></div>
+    <a href="javascript:void(0)" class="popClose"></a>
+</div>
+<!--弹出分享微信
+<div class="sharePop weixin">
+    <div class="person"></div>
+    <div class="text1"></div>
+    <div class="code"></div>
+    <div class="text2"></div>
+    <a href="javascript:void(0)" class="popClose"></a>
+</div>
+-->
+<script>
+    $(function(){
+        $(document).on("click",".start",function(){
+            var _phone=$("input[name='phone']").val();
+            if($.isEmpty(_phone)){
+                $.msg({msg:"输入您的手机号"});
+                return;
+            }
+            if(!$.isPhone(_phone)){
+                $.msg({msg:"手机号格式错误"});
+                return;
+            }
+            //没有机会了
+            //$(".sharePop").fadeIn(200);
+            //去游戏
+            window.location.href="game.html"
+        });
+        $(document).on("click",".popClose",function(){
+            $(".sharePop").fadeOut(200);
+        });
+    });
+</script>
+</body>
+</html>

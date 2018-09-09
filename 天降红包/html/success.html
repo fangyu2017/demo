@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1, maximum-scale=1,user-scalable=no" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="blank" />
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link href="css/base.css" rel="stylesheet" type="text/css">
+    <link href="css/result.css" rel="stylesheet" type="text/css">
+    <script src="js/fontSize.js"></script>
+    <script src="js/jquery.2.1.4.min.js"></script>
+    <script src="js/function.js"></script>
+    <title>天降红包雨</title>
+</head>
+<div class="wrapper">
+    <div class="header"></div>
+    <div class="result-success">
+        <div class="text"></div>
+    </div>
+    <a href="javascript:void(0)" class="reStart"></a>
+    <a href="" class="toHome"></a>
+</div>
+<!--弹出分享app-->
+<div class="sharePop app">
+    <div class="person"></div>
+    <div class="text1"></div>
+    <div class="code"></div>
+    <div class="text2"></div>
+    <a href="javascript:void(0)" class="popClose"></a>
+</div>
+<!--弹出分享微信
+<div class="sharePop weixin">
+    <div class="person"></div>
+    <div class="text1"></div>
+    <div class="code"></div>
+    <div class="text2"></div>
+    <a href="javascript:void(0)" class="popClose"></a>
+</div>
+-->
+<script>
+    $(function(){
+        $(document).on("click",".goBack",function(){
+            window.history.go(-1)
+        });
+        $(document).on("click",".reStart",function(){
+            $(".sharePop").fadeIn(200);
+        });
+        $(document).on("click",".popClose",function(){
+            $(".sharePop").fadeOut(200);
+        });
+    });
+</script>
+</body>
+</html>

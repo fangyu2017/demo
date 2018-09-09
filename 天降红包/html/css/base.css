@@ -1,0 +1,461 @@
+﻿@charset "utf-8";
+
+/*reset css*/
+
+
+/*reset css*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+.footer,
+.header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-size: 14px;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+.footer,
+.header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+textarea {
+    resize: none;
+    font-family: arial, "黑体";
+}
+
+* {
+    outline: none;
+    -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+}
+
+a:focus,
+a:active,
+a:link,
+a:visited,
+a:hover {
+    outline: none;
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+}
+
+input {
+    font-family: Helvetica, Tahoma, Arial, STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑", sans-serif;
+}
+
+
+/*清除浮动*/
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.mt-20 {
+    margin-top: .2rem;
+}
+
+body {
+    font-family: Helvetica, Tahoma, Arial, STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑", sans-serif;
+    font-size: 0.2rem;
+    background: url("../images/bj-body.jpg") no-repeat left top #F9C732;
+    color: #FFF;
+    background-size: 100% auto;
+}
+
+.hide {
+    display: none;
+}
+
+a {
+    color: #303030
+}
+
+.wrapper {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* 对话框 */
+
+.tempConfirmShade {
+    position: fixed;
+    background: #000000;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    display: none;
+    z-index: 300;
+}
+
+.tempConfirm {
+    position: fixed;
+    background: #F8F1C9;
+    left: 0;
+    top: 0;
+    display: none;
+    width: 5rem;
+    text-align: left;
+    z-index: 301;
+    padding-top: .7rem;
+    border-radius: .3rem;
+}
+
+.tempConfirm .tempConfirmIcon {
+    position: absolute;
+    background: url("../images/icon-pop-err.png") no-repeat;
+    width: 2rem;
+    height: 1.7rem;
+    left: 50%;
+    margin-left: -1rem;
+    top: -1rem;
+    background-size: 100% auto;
+}
+
+.tempConfirm .tempConfirmIcon.err {
+    background-image: url("../images/icon-pop-err.png");
+}
+
+.tempConfirm .tempConfirmIcon.lose {
+    background-image: url("../images/icon-pop-lose.png");
+}
+
+.tempConfirm .tempConfirmIcon.success {
+    background-image: url("../images/icon-pop-success.png");
+}
+
+.tempConfirm .tempConfirmCloes {
+    display: block;
+    position: absolute;
+    width: 0.5rem;
+    height: 0.5rem;
+    top: -0.1rem;
+    right: -.1rem;
+    background: url("../images/close.png") no-repeat center center #FC2F58;
+    border-radius: 50%;
+    background-size: .28rem auto;
+}
+
+.tempConfirm .tempConfirmTitle {
+    position: relative;
+    margin-top: 1.5rem;
+    line-height: .6rem;
+}
+
+.tempConfirm .tempConfirmContents {
+    padding: 1px 0;
+}
+
+.tempConfirm .tempConfirmButtonBox {
+    text-align: center;
+    margin: .3rem 0;
+    height: .8rem;
+    text-align: center;
+}
+
+.tempConfirm .tempConfirmButtonBox a {
+    display: inline-block;
+    height: 0.7rem;
+    font-size: 0.26rem;
+    color: #81511c;
+    text-align: center;
+    line-height: 0.7rem;
+    width: 1.8rem;
+    border-radius: .6rem;
+    margin: 0 .2rem;
+    border-bottom: .06rem #B0A88D solid;
+    font-weight: bold;
+    background-image: -webkit-linear-gradient(top, #FEFF3B, #F0F222);
+    background-image: linear-gradient(top, #FEFF3B, #F0F222);
+}
+
+.tempConfirm .tempConfirmButtonBox a:first-child {
+    background-image: -webkit-linear-gradient(top, #FD3059, #EF2048);
+    background-image: linear-gradient(top, #FD3059, #EF2048);
+    color: #FFF;
+}
+
+.tempConfirm .tempConfirmButtonBox.butOne a {
+    width: 2.2rem;
+}
+
+.tempConfirm .popMsg {
+    margin: 0 .04rem;
+    text-align: center;
+    font-size: .28rem;
+    line-height: .4rem;
+    color: #683017;
+}
+
+.tempConfirm .popMsg h2 {
+    font-weight: bold;
+    margin: .4rem 0;
+}
+
+.tempConfirm .popMsg h3 {
+    font-weight: bold;
+    font-size: .3rem;
+    line-height: .5rem;
+}
+
+.tempConfirm .popMsg h3 em {
+    color: #f42d52;
+}
+
+.tempConfirm .popMsg h4 {
+    font-weight: bold;
+}
+
+.tempConfirm .popMsg p {
+    color: #9c7d54;
+    font-size: .24rem;
+    line-height: .4rem;
+}
+
+.tempConfirm .popMsg em {
+    font-size: .4rem;
+    margin: 0 .05rem;
+}
+
+.tempConfirm .popText {
+    margin: 0.4rem 0.3rem .2rem;
+    font-size: .28rem;
+    line-height: 2em;
+    color: #683017;
+}
+
+.tempConfirm .popText em {
+    color: #ff473b;
+}
+
+
+/* 弹出提示信息*/
+
+.tempMsg {
+    position: absolute;
+    z-index: 999;
+    display: none;
+    padding: .2rem .3rem;
+    background: rgba(0, 0, 0, 0.75);
+    color: #FFF;
+    font-size: .3rem;
+    max-width: 5rem;
+    line-height: .4rem;
+    border-radius: .15rem;
+}
+
+.tempMsgBj {
+    position: fixed;
+    background: #000000;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    display: none;
+    z-index: 998;
+    margin-left: -322px;
+}
+
+.sharePop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+}
+
+.sharePop .person {
+    background: url("../images/pop-person.png") no-repeat;
+    width: 2.18rem;
+    height: 2.77rem;
+    margin: .5rem auto 0;
+    background-size: 100% auto;
+}
+
+.sharePop.app .text1 {
+    background: url("../images/pop-text1.png") no-repeat;
+    background-size: 100% auto;
+    height: .94rem;
+    background-size: 100% auto;
+    margin: .2rem 0;
+}
+
+.sharePop.app .text2 {
+    background: url("../images/pop-text2.png") no-repeat;
+    background-size: 100% auto;
+    height: .36rem;
+    background-size: 100% auto;
+    margin: .2rem 0;
+}
+
+.sharePop.app .code {
+    background: url("../images/pop-code1.jpg") no-repeat;
+    width: 2.45rem;
+    height: 2.46rem;
+    background-size: 100% auto;
+    margin: .2rem auto;
+}
+
+.sharePop.weixin .text1 {
+    background: url("../images/pop-text3.png") no-repeat;
+    background-size: 100% auto;
+    height: 1.03rem;
+    background-size: 100% auto;
+    margin: .2rem 0;
+}
+
+.sharePop.weixin .text2 {
+    background: url("../images/pop-text4.png") no-repeat;
+    background-size: 100% auto;
+    height: .34rem;
+    background-size: 100% auto;
+    margin: .2rem 0;
+}
+
+.sharePop.weixin .code {
+    background: url("../images/pop-code2.jpg") no-repeat;
+    width: 2.84rem;
+    height: 2.84rem;
+    background-size: 100% auto;
+    margin: .2rem auto;
+}
+
+.sharePop .popClose {
+    display: block;
+    background: url("../images/but-4.png") no-repeat;
+    width: 2.51rem;
+    height: .78rem;
+    background-size: 100% auto;
+    position: absolute;
+    left: 50%;
+    bottom: .5rem;
+    margin-left: -1.25rem;
+}
